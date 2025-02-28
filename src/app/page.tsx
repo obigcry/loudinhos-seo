@@ -40,9 +40,14 @@ export default function App() {
 
   return (
     <main className='flex flex-col items-center min-h-screen p-6'>
-      <nav>
-        <Image alt="inoticiama" src='https://loud.gg/cdn/shop/files/LOUD___Wordmark_White.png?v=1727203990&width=248' />
-      </nav>
+      <Image
+  alt="inoticiama"
+  src="/logo.png" // Sem o prefixo "public/"
+  width={248}
+  height={100} // Ou defina uma altura fixa, se necessário
+/>
+
+
       <div><Toaster/></div>
       <section className="flex flex-col m-20 text-xl items-center select-none  main-seo">
         <section className="title-seo">
