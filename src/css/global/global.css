@@ -1,0 +1,28 @@
+:root {
+  --padding-pc: 20px 10px;
+  --padding-default: 20px;
+  --padding-lg: 40px 10px;
+
+  /* FONT */
+  --title-size-mb: 1.6rem;
+  --subtitle-size-mb: 0.9rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--col-bk);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

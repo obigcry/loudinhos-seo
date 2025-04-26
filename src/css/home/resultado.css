@@ -1,0 +1,26 @@
+.resultado-bg {
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: var(--padding-pc);
+}
+.resultado-container {
+  max-width: 1000px;
+  background-color: var(--col-bk3);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resultado-conteudo {
+  overflow: hidden;
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .resultado-bg {
+    width: 100vw;
+    padding: 20px 10px;
+  }
+}

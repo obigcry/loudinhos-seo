@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site da Loudinhos para gerar SEO automaticamente.">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="shortcut icon" href="./src/assets/img/favicon.png" type="image/x-icon">
+  <title>LOUDinhos SEO</title>
+</head>
+
+<body>
+
+  <header class="header-bg" role="banner">
+    <div class="header-container">
+      <div class="header-conteudo">
+        <a href="index.html" aria-label="Página inicial LOUDinhos">
+          <img src="./src/assets/img/logo_loudinhos.webp" alt="Logo LOUDinhos" width="auto" height="auto">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section class="cards-bg" aria-labelledby="selecao-de-jogos">
+      <h2 id="selecao-de-jogos" class="visually-hidden">Seleção de Jogos</h2>
+
+      <div class="slider-container" role="region" aria-label="Carrossel de Jogos">
+        <button class="arrow arrow-left" aria-label="Anterior">&#10094;</button>
+
+        <div class="slider" id="slider">
+          <!-- Cards de jogos -->
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar jogo Free Fire">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_ff.webp" alt="Poster do jogo Free Fire" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">FREE FIRE</div>
+            </div>
+          </div>
+
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar jogo LOL">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_lol.webp" alt="Poster do jogo League of Legends (LOL)" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">LOL</div>
+            </div>
+          </div>
+
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar jogo Valorant">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_valorant.webp" alt="Poster do jogo Valorant" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">VALORANT</div>
+            </div>
+          </div>
+
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar jogo Brawl Stars">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_brawl.webp" alt="Poster do jogo Brawl Stars" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">BRAWL STARS</div>
+            </div>
+          </div>
+
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar jogo Rainbow Six">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_r6.webp" alt="Poster do jogo Rainbow Six" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">R6</div>
+            </div>
+          </div>
+
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar jogo Fortnite">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_fortnite.webp" alt="Poster do jogo Fortnite" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">FORTNITE</div>
+            </div>
+          </div>
+
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar Influencers">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_influencers.webp" alt="Poster de Influencers" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">INFLUENCERS</div>
+            </div>
+          </div>
+
+          <div class="card" role="button" tabindex="0" aria-label="Selecionar Geral">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="./src/assets/img/poster_geral.webp" alt="Poster Geral de jogos" width="auto" height="auto">
+              </div>
+              <div class="card-text col-wh p-medium2">GERAL</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="arrow arrow-right" aria-label="Próximo">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="button-bg" aria-labelledby="gerar-seo">
+      <h2 id="gerar-seo" class="visually-hidden">Gerar SEO</h2>
+      <button class="button-container col-wh p-medium2" type="button" aria-label="Gerar texto de SEO" style="width: 100%;">
+        GERAR SEO
+      </button>
+    </section>
+
+    <section class="resultado-bg" aria-labelledby="resultado-seo">
+      <h2 id="resultado-seo" class="visually-hidden">Resultado do SEO</h2>
+      <div class="resultado-container">
+        <div class="resultado-conteudo col-wh p-medium" role="textbox" aria-label="Texto gerado" tabindex="0">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bg" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-conteudo">
+        <ul class="redes-sociais" aria-label="Redes sociais">
+          <li>
+            <a href="https://www.tiktok.com/@loudinhosofc" class="link" aria-label="TikTok da LOUDinhos" target="_blank" rel="noopener noreferrer">
+              <img src="./src/assets/icons/tiktok.svg" alt="Ícone do TikTok" width="28" height="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/loudinhosofc/" class="link" aria-label="Instagram da LOUDinhos" target="_blank" rel="noopener noreferrer">
+              <img src="./src/assets/icons/instagram.svg" alt="Ícone do Instagram" width="28" height="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/loudinhos/" class="link" aria-label="Twitter (X) da LOUDinhos" target="_blank" rel="noopener noreferrer">
+              <img src="./src/assets/icons/x.svg" alt="Ícone do X (Twitter)" width="28" height="28">
+            </a>
+          </li>
+        </ul>
+        <div class="footer-text">
+          <a href="index.html" class="p-regular col-wh" aria-label="Voltar para a página inicial">
+            &copy; LOUDinhos
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./src/js/cards.js"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
