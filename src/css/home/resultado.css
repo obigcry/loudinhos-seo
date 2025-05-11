@@ -15,7 +15,7 @@
   overflow: hidden;
   flex-wrap: wrap;
   cursor: pointer;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 @media (max-width: 600px) {

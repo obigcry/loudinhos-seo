@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     cards.forEach((card) => {
-      card.style.minWidth = window.innerWidth <= 600 ? "50%" : "25%";
+      card.style.minWidth = window.innerWidth <= 600 ? "50%" : "20%";
       card.style.maxHeight = "340px";
       card.style.cursor = "pointer";
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = card.querySelector("img");
         const text = card.querySelector(".card-text");
         if (img) img.style.transform = "scale(1.1)";
-        if (text) text.style.backgroundColor = "var(--col-green)";
+        if (text) text.style.backgroundColor = "var(--col-red)";
       });
 
       card.addEventListener("mouseleave", () => {
@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     cardContents.forEach((content) => {
-      content.style.background = "var(--col-bk2)";
       content.style.height = "auto";
       content.style.display = "flex";
       content.style.flexDirection = "column";
@@ -75,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     cardTexts.forEach((text) => {
+      text.style.background = "var(--col-bk)";
       text.style.fontSize = "var(--subtitle-size-mb)";
       text.style.textAlign = "center";
       text.style.padding = "10px";
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       arrow.style.top = "50%";
       arrow.style.transform = "translateY(-50%)";
       arrow.style.fontSize = "2rem";
-      arrow.style.background = "var(--col-bk3)";
+      arrow.style.background = "var(--col-bk)";
       arrow.style.color = "var(--col-wh)";
       arrow.style.cursor = "pointer";
       arrow.style.zIndex = "2";

@@ -3,6 +3,8 @@ const links = document.querySelectorAll(".link");
 links.forEach(function (link) {
   link.setAttribute("target", "_blank");
 });
+
+// SLIDER
 const slider = document.getElementById("slider");
 const cards = slider.children;
 const totalCards = cards.length;
@@ -16,7 +18,7 @@ for (let i = 0; i < visibleCards; i++) {
 }
 
 function getVisibleCards() {
-  return window.innerWidth <= 480 ? 2 : 4;
+  return window.innerWidth <= 480 ? 2 : 5;
 }
 
 function moveSlider(step) {
@@ -70,17 +72,22 @@ allCards.forEach((card) => {
 function gerarMensagem(jogo) {
   let mensagens = {
     "FREE FIRE":
-      "#ff #FFWSBR #freefire #freefirebrasil #ffbrasil #garena #garenabrasil #garenafreefire #garenaoficial #esports #loud #loudgg",
-    LOL: "#LTASul #LEAGUEOFLEGENDS #LOL #RIOT #RIOTGAMES #ESPORTS #loud #loudgg",
+      "#ff #FFWSBR #freefire #freefirebrasil #ffbrasil #garena #garenabrasil #garenafreefire #garenaoficial #mobile #mobilegame #jogomobile #esports #loud #loudgg",
+    LOL: "#LTASUL #LEAGUEOFLEGENDS #LOL #RIOT #RIOTGAMES #ESPORTS #loud #loudgg #news #novidade #agenda #esportschampionship #competiçao #jogosonline #videogame #site #website",
     VALORANT:
-      "#valorant #vlr #vctamericas #vct #valorantchampions #valorantchampionstour #loud #loudgg #riot #riotgames #esports",
-    "BRAWL STARS": "#FINAISMENSAIS #BRAWLCUP #BRAWLSTARS #LOUDBRAWL",
-    R6: "#R6 #rainbow #rainbowsix #ubisoft",
-    FORTNITE: "#FNCS #fortnitebr #fortniteps #epicgames",
+      "#valorant #vlr #vctamericas #vct #valorantchampions #valorantchampionstour #loud #loudgg #riot #riotgames #esports #fps #fpsgame #news #novidade #agenda #esportschampionship #competiçao #jogosonline #videogame #site #website",
+    "BRAWL STARS":
+      "#FINAISMENSAIS #BRAWLCUP #BRAWLSTARS #LOUDBRAWL #news #novidade #agenda #esportschampionship #competiçao #jogosonline #videogame #site #website",
+    R6: "#R6 #rainbow #rainbowsix #ubisoft #fps #fpsgame #news #novidade #agenda #esportschampionship #competiçao #jogosonline #videogame #site #website",
+    FORTNITE:
+      "#FNCS #fortnitebr #fortniteps #epicgames #news #novidade #agenda #esportschampionship #competiçao #jogosonline #videogame #site #website",
     INFLUENCERS:
-      "#loud #loudgg #twitch #twitchstreamer #twitchtv #youtube #youtubestream #stream #livestream",
+      "#loud #loudgg #twitch #twitchstreamer #twitchtv #youtube #youtubestream #stream #livestream #news #novidade #agenda #esportschampionship #competiçao #jogosonline #videogame #site #website",
+    DESIGNERS:
+      "#photoshop #design #graphicdesign #designgrafico #coreldrawl #photoshop",
+    EDITORES: "#capcut #edit #esportsedit #meme #ediçaodevideo",
     GERAL:
-      "#KINGSLEAGUE #valorant #vlr #vctamericas #vct #valorantchampions #valorantchampionstour #loud #loudgg #riot #riotgames #CBLOL #CBLOLACADEMY #LEAGUEOFLEGENDS #LOL #RIOT #RIOTGAMES #ff #freefire #freefirebrasil #ffbrasil #garena #garenabrasil #garenafreefire #garenaoficial #esports #loud #loudgg",
+      "#KINGSLEAGUE #valorant #vlr #vctamericas #vct #valorantchampions #valorantchampionstour #loud #loudgg #riot #riotgames #CBLOL #CBLOLACADEMY #LEAGUEOFLEGENDS #LOL #RIOT #RIOTGAMES #ff #freefire #freefirebrasil #ffbrasil #garena #garenabrasil #garenafreefire #garenaoficial #esports #loud #loudgg #news #novidade #agenda #esportschampionship #competiçao #jogosonline #videogame #site #website",
   };
 
   return mensagens[jogo.toUpperCase()] || "Escolha não reconhecida.";

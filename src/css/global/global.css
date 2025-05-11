@@ -7,7 +7,6 @@
   --title-size-mb: 1.6rem;
   --subtitle-size-mb: 0.9rem;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -15,7 +14,6 @@
 body {
   background-color: var(--col-bk);
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;

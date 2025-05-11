@@ -3,8 +3,7 @@
   height: auto;
   overflow: hidden;
   box-sizing: border-box;
-  padding: var(--padding-pc);
-  background-color: var(--col-bk);
+  padding: var(--padding-lg);
   border-bottom: 1px solid var(--col-bk3);
 }
 .header-container {
